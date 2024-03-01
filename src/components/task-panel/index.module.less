@@ -1,0 +1,38 @@
+.panel {
+  width: 280px;
+  height: 400px;
+  outline: 1px solid #000;
+  padding: 4px;
+}
+
+.panel_selected {
+  outline: 1px solid rgba(0, 85, 255, 0.722);
+  box-shadow: 0 0 12px rgba(0, 98, 255, 0.335);
+  transition: all .3s;
+  transform: scale(1.02);
+}
+
+.task_content {
+  height: 360px;
+  overflow: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.task_item {
+  padding: 0 8px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    background: rgba(0, 98, 255, 0.2);
+  }
+}
+
+.task_item_active{
+  background: rgba(0, 98, 255, 0.2);
+}

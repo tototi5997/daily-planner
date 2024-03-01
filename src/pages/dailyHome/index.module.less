@@ -1,0 +1,90 @@
+.home {
+  width: 100%;
+  height: 100%;
+
+  .start_text {
+    transition: all .3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .time_panel {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+  }
+}
+
+.label {
+  &_enter {
+    opacity: 0;
+  }
+
+  &_enter_active {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+
+  &_exit {
+    opacity: 1;
+    position: absolute;
+  }
+
+  &_exit_active {
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+}
+
+.time {
+  font-weight: 500;
+  color: #121212;
+
+  &_enter {
+    opacity: 0;
+  }
+
+  &_enter_active {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+
+  &_exit {
+    opacity: 0;
+    // transform: scale(0.4);
+    position: absolute;
+  }
+
+  &_exit_active {
+    opacity: 1;
+    // transform: scale(1);
+    transition: all 300ms;
+  }
+}
+
+.panel {
+  &_enter {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  &_enter_active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 300ms;
+  }
+
+  &_exit {
+    opacity: 1;
+    transform: scale(1);
+    position: absolute;
+  }
+
+  &_exit_active {
+    opacity: 0;
+    transform: scale(0.6);
+    transition: all 300ms;
+  }
+}
